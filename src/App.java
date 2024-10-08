@@ -10,6 +10,7 @@ public class App {
     }
 
     public static void spelLoop(tamagotchi friend){
+        friend.addHi();
         Scanner tb = new Scanner(System.in);
         while (friend.getAlive()) {
             System.out.println("Vad vill du göra med "+friend.name+"?");
@@ -26,6 +27,7 @@ public class App {
         }
         else if (val == 3) {
             System.out.println("Välj ett ord att lära din kompis:");
+            tb.next();
             String word = tb.nextLine();
             friend.teach(word);
         }

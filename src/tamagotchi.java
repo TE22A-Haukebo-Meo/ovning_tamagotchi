@@ -9,6 +9,10 @@ public class tamagotchi {
     private Random generator = new Random();
     String name;
 
+    public void addHi(){
+        words.add("hi");
+    }
+
     public void tick(){
         hunger += 1;
         boredom += 1;
@@ -27,7 +31,9 @@ public class tamagotchi {
     }
 
     public void hi(){
-        System.out.println(words(generator.nextInt(words.size())));
+        int size = words.size();
+        int randInt = generator.nextInt(size);
+        System.out.println(words.get(randInt));
         reduceBoredom();
     }
 
