@@ -27,7 +27,7 @@ public class App {
         }
         else if (val == 3) {
             System.out.println("Välj ett ord att lära din kompis:");
-            tb.next();
+            tb.nextLine();
             String word = tb.nextLine();
             friend.teach(word);
         }
