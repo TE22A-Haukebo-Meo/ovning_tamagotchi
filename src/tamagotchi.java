@@ -27,7 +27,7 @@ public class tamagotchi {
     }
 
     public void hi(){
-        System.out.println(words(generator.nextInt(words.length)));
+        System.out.println(words(generator.nextInt(words.size())));
         reduceBoredom();
     }
 
