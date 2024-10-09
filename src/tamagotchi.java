@@ -7,6 +7,7 @@ public class tamagotchi {
     private ArrayList<String> words = new ArrayList<>();
     private boolean isAlive = true;
     private Random generator = new Random();
+    static ArrayList <tamagotchi> friends = new ArrayList<>(); 
     String name;
 
     public void addHi(){
