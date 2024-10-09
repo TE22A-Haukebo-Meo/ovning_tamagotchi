@@ -23,6 +23,9 @@ public class tamagotchi {
     
     public void feed(){
         hunger -= generator.nextInt(10);
+        if (hunger < 0) {
+            hunger = 0;
+        }
     }
 
     public void teach(String word){
@@ -39,6 +42,9 @@ public class tamagotchi {
 
     private void reduceBoredom(){
         boredom -= generator.nextInt(10);
+        if (boredom < 0) {
+            boredom = 0;
+        }
     }
 
     public boolean getAlive(){
